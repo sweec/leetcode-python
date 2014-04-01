@@ -1,9 +1,3 @@
-'''
-Created on Mar 31, 2014
-
-@author: dluo
-'''
-
 class Solution():
     # @param A, a list of integer
     # @return an integer

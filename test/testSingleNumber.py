@@ -1,8 +1,3 @@
-'''
-Created on Mar 31, 2014
-
-@author: dluo
-'''
 import unittest
 from SingleNumber import Solution
 
