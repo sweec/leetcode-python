@@ -15,15 +15,12 @@ class Solution:
         while stack:
             node = stack.pop()
             r = node[0]
-            if (not r.left):
-                pt.append(r.val)
-                if r.right:
-                    stack.append([r.right, False])
-            elif node[1]:
+            if node[1]:
                 pt.append(r.val)
             else:
                 if r.right:
                     stack.append([r.right, False])
                 stack.append([r, True])
-                stack.append([r.left, False])
+                if r.left:
+                    stack.append([r.left, False])
         return pt
