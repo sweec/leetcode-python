@@ -4,7 +4,7 @@ from ReverseInteger import Solution
 class Test(unittest.TestCase):
 
 
-    def testSingleNumber(self):
+    def testReverse(self):
         s = Solution()
         xs = [12, -12, 0]
         ans = [21, -21, 0]

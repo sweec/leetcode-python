@@ -4,7 +4,7 @@ from RemoveDuplicatesFromSortedList import ListNode, Solution
 class Test(unittest.TestCase):
 
 
-    def testSingleNumber(self):
+    def testDeleteDuplicates(self):
         s = Solution()
         head = ListNode(1)
         head.next = ListNode(1)

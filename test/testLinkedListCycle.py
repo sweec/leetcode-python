@@ -4,7 +4,7 @@ from LinkedListCycle import ListNode, Solution
 class Test(unittest.TestCase):
 
 
-    def testSingleNumber(self):
+    def testHasCycle(self):
         s = Solution()
         head = ListNode(1)
         head.next = ListNode(2)

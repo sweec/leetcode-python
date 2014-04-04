@@ -4,7 +4,7 @@ from UniqueBinarySearchTrees import Solution
 class Test(unittest.TestCase):
 
 
-    def testSingleNumber(self):
+    def testNumTrees(self):
         s = Solution()
         ns = [1, 2, 3, 4]
         ans = [1, 2, 5, 14]

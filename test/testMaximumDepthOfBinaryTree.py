@@ -4,7 +4,7 @@ from MaximumDepthOfBinaryTree import TreeNode, Solution
 class Test(unittest.TestCase):
 
 
-    def testSameTree(self):
+    def testMaxDepth(self):
         s = Solution()
         root = TreeNode(1)
         root.left = TreeNode(2)

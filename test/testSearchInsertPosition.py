@@ -4,7 +4,7 @@ from SearchInsertPosition import Solution
 class Test(unittest.TestCase):
 
 
-    def testSingleNumber(self):
+    def testSearchInsert(self):
         s = Solution()
         A = [1,3,5,6]
         targets = [1, 5, 2, 7, 0, 6]

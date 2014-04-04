@@ -4,7 +4,7 @@ from BinaryTreeInorderTraversal import TreeNode, Solution
 class Test(unittest.TestCase):
 
 
-    def testSameTree(self):
+    def testInorderTraversal(self):
         s = Solution()
         root = TreeNode(1)
         root.right = TreeNode(2)
