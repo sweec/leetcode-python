@@ -7,8 +7,8 @@ class TreeNode:
 def getTree(A):
     if not A:
         return None
-    head = TreeNode(A[0])
-    curLayer = [head]
+    root = TreeNode(A[0])
+    curLayer = [root]
     i, size = 1, len(A)
     while i < size and curLayer:
         nextLayer = []
@@ -30,4 +30,29 @@ def getTree(A):
             else:
                 break
         curLayer = nextLayer
-    return head
+    return root
+
+def saveTree(root):
+    if not root:
+        return []
+    curLayer = [root]
+    A = [root.val]
+    while curLayer:
+        nextLayer = []
+        for cur in curLayer:
+            if cur.left:
+                A.append(cur.left.val)
+                nextLayer.append(cur.left)
+            else:
+                A.append('#')
+            if cur.right:
+                A.append(cur.right.val)
+                nextLayer.append(cur.right)
+            else:
+                A.append('#')
+        curLayer = nextLayer
+    last = A.pop()
+    while last == '#':
+        last = A.pop()
+    A.append(last)
+    return A
