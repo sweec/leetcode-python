@@ -1,5 +1,5 @@
 import unittest
-from Tree import getTree
+from Utility import getTree
 from BalancedBinaryTree import Solution
 
 class Test(unittest.TestCase):

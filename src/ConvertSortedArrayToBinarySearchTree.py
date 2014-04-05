@@ -1,4 +1,4 @@
-from Tree import TreeNode
+from Utility import TreeNode
 
 class Solution:
     # @param num, a list of integers

@@ -1,3 +1,24 @@
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+def getList(A):
+    pre = ListNode(0)
+    cur = pre
+    for val in A:
+        cur.next = ListNode(val)
+        cur = cur.next
+    return pre.next
+
+def saveList(head):
+    A = []
+    cur = head
+    while cur:
+        A.append(cur.val)
+        cur = cur.next
+    return A
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
