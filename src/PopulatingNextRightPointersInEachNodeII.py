@@ -1,3 +1,10 @@
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+        self.next = None
+
 class Solution:
     # @param root, a tree node
     # @return nothing
@@ -26,3 +33,4 @@ class Solution:
                 if pre.right:
                     cur.next = pre.right
                     cur = cur.next
+        
