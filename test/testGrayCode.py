@@ -11,5 +11,4 @@ class Test(unittest.TestCase):
         self.assertEqual(A, an)
 
 if __name__ == "__main__":
-    #import sys;sys.argv = ['', 'Test.testSingleNumber']
     unittest.main()
